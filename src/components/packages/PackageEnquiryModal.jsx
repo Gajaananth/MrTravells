@@ -63,7 +63,7 @@ export default function PackageEnquiryModal({ pkg, onClose }) {
         initial={{ opacity: 0, scale: 0.94, y: 20 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.94, y: 20 }}
-        className="bg-white dark:bg-[#072418] border border-stone-200 dark:border-ceylon-gold/30 rounded-2xl sm:rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl relative text-left my-auto transition-colors"
+        className="liquid-glass-card rounded-2xl sm:rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl relative text-left my-auto"
       >
         {/* Header */}
         <div className="p-4 sm:p-6 pb-3 sm:pb-4 border-b border-stone-200 dark:border-white/10 flex items-center justify-between">

@@ -21,8 +21,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Theme script to prevent flash and enforce theme immediately -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('mrtravels_theme');
+          if (saved === 'dark') {
+            document.documentElement.classList.add('dark');
+            document.documentElement.classList.remove('light');
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.classList.add('light');
+          }
+        } catch(e) {}
+      })();
+    </script>
   </head>
-  <body class="bg-[#051810] text-[#fbf9f4] selection:bg-[#e5a93c] selection:text-[#051810] antialiased overflow-x-hidden">
+  <body class="bg-white text-stone-900 dark:bg-[#051810] dark:text-[#fbf9f4] selection:bg-[#e5a93c] selection:text-[#051810] antialiased overflow-x-hidden transition-colors">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

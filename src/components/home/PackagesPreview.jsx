@@ -49,7 +49,7 @@ export default function PackagesPreview({ onOpenEnquiry }) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="bg-white dark:glass-card rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col justify-between border border-stone-200 dark:border-ceylon-gold/25 relative group shadow-md hover:shadow-xl dark:shadow-2xl transition-all"
+              className="liquid-glass-card rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col justify-between relative group shadow-md"
             >
               <div>
                 {/* Image Header with Price Badge in LKR */}
@@ -85,12 +85,12 @@ export default function PackagesPreview({ onOpenEnquiry }) {
                     <span className="text-[10px] sm:text-[11px] text-amber-600 dark:text-ceylon-gold font-bold uppercase tracking-wider">
                       {pkg.tagline}
                     </span>
-                    <h3 className="font-serif text-lg sm:text-xl font-bold text-stone-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-ceylon-gold transition-colors mt-0.5">
+                    <h3 className="font-serif text-lg sm:text-xl font-bold text-stone-950 dark:text-white group-hover:text-amber-700 dark:group-hover:text-ceylon-gold transition-colors mt-0.5">
                       {pkg.title}
                     </h3>
                   </div>
 
-                  <p className="text-stone-600 dark:text-stone-300 text-xs sm:text-sm font-normal dark:font-light line-clamp-3 leading-relaxed">
+                  <p className="text-stone-700 dark:text-stone-300 text-xs sm:text-sm font-normal line-clamp-3 leading-relaxed">
                     {pkg.overview}
                   </p>
 
@@ -98,8 +98,8 @@ export default function PackagesPreview({ onOpenEnquiry }) {
                   <div className="space-y-1.5 pt-2 border-t border-stone-100 dark:border-white/10">
                     <span className="text-[10px] sm:text-[11px] font-semibold text-stone-500 dark:text-stone-400 uppercase tracking-wider block">Tour Highlights</span>
                     {pkg.highlights.slice(0, 3).map((hl, i) => (
-                      <div key={i} className="flex items-start gap-2 text-xs text-stone-600 dark:text-stone-300">
-                        <CheckCircle2 size={14} className="text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
+                      <div key={i} className="flex items-start gap-2 text-xs text-stone-700 dark:text-stone-300">
+                        <CheckCircle2 size={14} className="text-emerald-700 dark:text-emerald-400 shrink-0 mt-0.5" />
                         <span className="line-clamp-1">{hl}</span>
                       </div>
                     ))}
@@ -142,10 +142,10 @@ export default function PackagesPreview({ onOpenEnquiry }) {
         </div>
 
         {/* Custom Multi-day banner */}
-        <div className="mt-12 sm:mt-16 bg-white dark:glass-card p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-stone-200 dark:border-ceylon-gold/30 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6 text-left shadow-md dark:shadow-2xl">
+        <div className="mt-12 sm:mt-16 liquid-glass-card p-5 sm:p-8 rounded-2xl sm:rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6 text-left">
           <div className="space-y-1 max-w-xl">
-            <h4 className="font-serif text-lg sm:text-xl font-bold text-stone-900 dark:text-white">Need a Customized Multi-Day Tour?</h4>
-            <p className="text-stone-600 dark:text-stone-300 text-xs sm:text-sm font-normal dark:font-light">
+            <h4 className="font-serif text-lg sm:text-xl font-bold text-stone-950 dark:text-white">Need a Customized Multi-Day Tour?</h4>
+            <p className="text-stone-700 dark:text-stone-300 text-xs sm:text-sm font-normal">
               Want to combine Sigiriya Lion Rock, Ella Nine Arches, Nuwara Eliya, Trincomalee, Batticaloa, or Polonnaruwa across multiple days? We can design your exact custom route in LKR.
             </p>
           </div>

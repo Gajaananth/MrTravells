@@ -61,13 +61,13 @@ export default function PackagesPage() {
             </div>
 
             {/* Vehicle Guarantee Pill */}
-            <div className="bg-white dark:glass-card p-3 sm:p-4 rounded-xl sm:rounded-2xl border border-stone-200 dark:border-white/10 flex items-center gap-3 text-left shrink-0 shadow-sm">
-              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white dark:bg-ceylon-gold/20 border border-amber-300 dark:border-transparent flex items-center justify-center text-amber-700 dark:text-ceylon-gold shrink-0">
+            <div className="liquid-glass-card p-3 sm:p-4 rounded-xl sm:rounded-2xl flex items-center gap-3 text-left shrink-0">
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-amber-100/80 dark:bg-ceylon-gold/20 border border-amber-300 dark:border-transparent flex items-center justify-center text-amber-800 dark:text-ceylon-gold shrink-0">
                 <ShieldCheck size={20} />
               </div>
               <div className="text-xs">
-                <div className="text-stone-900 dark:text-white font-bold">1 Dedicated Sedan Only</div>
-                <div className="text-stone-500 dark:text-stone-400">Exclusive VIP pacing, no sharing</div>
+                <div className="text-stone-950 dark:text-white font-bold">1 Dedicated Sedan Only</div>
+                <div className="text-stone-600 dark:text-stone-400 font-medium">Exclusive VIP pacing, no sharing</div>
               </div>
             </div>
           </div>
@@ -104,12 +104,12 @@ export default function PackagesPage() {
 
       {/* Custom Itinerary Callout */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 sm:mt-16">
-        <div className="bg-white dark:glass-card p-6 sm:p-10 lg:p-12 rounded-2xl sm:rounded-3xl border border-stone-200 dark:border-ceylon-gold/30 text-center relative overflow-hidden shadow-md dark:shadow-2xl">
+        <div className="liquid-glass-card p-6 sm:p-10 lg:p-12 rounded-2xl sm:rounded-3xl text-center relative overflow-hidden">
           <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-500/5 dark:bg-emerald-600/10 rounded-full blur-3xl pointer-events-none" />
-          <h2 className="font-serif text-xl sm:text-3xl font-bold text-stone-900 dark:text-white mb-2 sm:mb-3">
+          <h2 className="font-serif text-xl sm:text-3xl font-bold text-stone-950 dark:text-white mb-2 sm:mb-3">
             Want to build your own custom Sri Lanka road trip?
           </h2>
-          <p className="text-stone-600 dark:text-stone-300 text-xs sm:text-sm max-w-xl mx-auto mb-5 sm:mb-6 font-normal dark:font-light">
+          <p className="text-stone-700 dark:text-stone-300 text-xs sm:text-sm max-w-xl mx-auto mb-5 sm:mb-6 font-normal">
             We regularly plan custom multi-day round-island routes connecting Sigiriya Lion Rock, Ella Nine Arches, Polonnaruwa, Trincomalee, Batticaloa, Nuwara Eliya, and Mirissa.
           </p>
           <a

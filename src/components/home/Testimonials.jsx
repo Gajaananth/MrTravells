@@ -67,7 +67,7 @@ export default function Testimonials() {
         {loading ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[1, 2, 3].map((n) => (
-              <div key={n} className="bg-white dark:glass-card h-60 rounded-2xl animate-pulse p-6 border border-stone-200 dark:border-white/10" />
+              <div key={n} className="liquid-glass-card h-60 rounded-2xl animate-pulse p-6" />
             ))}
           </div>
         ) : (
@@ -79,7 +79,7 @@ export default function Testimonials() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.08 }}
-                className="bg-white dark:glass-card p-5 sm:p-7 rounded-2xl sm:rounded-3xl border border-stone-200 dark:border-ceylon-gold/20 flex flex-col justify-between relative group text-left shadow-sm hover:shadow-md dark:shadow-xl transition-all"
+                className="liquid-glass-card p-5 sm:p-7 rounded-2xl sm:rounded-3xl flex flex-col justify-between relative group text-left shadow-sm hover:shadow-md transition-all"
               >
                 <div>
                   {/* Top: Star rating & verified badge */}
@@ -105,8 +105,8 @@ export default function Testimonials() {
 
                   {/* Comment Text */}
                   <div className="relative mb-4 sm:mb-6">
-                    <Quote size={20} className="text-amber-400/20 dark:text-ceylon-gold/20 absolute -top-2 -left-1 -z-10" />
-                    <p className="text-stone-700 dark:text-stone-300 text-xs sm:text-sm leading-relaxed font-normal dark:font-light italic">
+                    <Quote size={20} className="text-amber-500/30 dark:text-ceylon-gold/20 absolute -top-2 -left-1 -z-10" />
+                    <p className="text-stone-800 dark:text-stone-200 text-xs sm:text-sm leading-relaxed font-normal italic">
                       "{rev.comment}"
                     </p>
                   </div>
@@ -127,10 +127,10 @@ export default function Testimonials() {
                 {/* Reviewer Details Footer */}
                 <div className="pt-3 sm:pt-4 border-t border-stone-200 dark:border-white/10 flex items-center justify-between">
                   <div>
-                    <h4 className="font-serif text-sm sm:text-base font-bold text-stone-900 dark:text-white group-hover:text-amber-600 dark:group-hover:text-ceylon-gold transition-colors">
+                    <h4 className="font-serif text-sm sm:text-base font-bold text-stone-950 dark:text-white group-hover:text-amber-700 dark:group-hover:text-ceylon-gold transition-colors">
                       {rev.customer_name}
                     </h4>
-                    <p className="text-[11px] sm:text-xs text-stone-500 dark:text-stone-400 line-clamp-1">
+                    <p className="text-[11px] sm:text-xs text-stone-600 dark:text-stone-400 font-medium line-clamp-1">
                       {rev.package_name || 'Sri Lanka Private Tour'}
                     </p>
                   </div>

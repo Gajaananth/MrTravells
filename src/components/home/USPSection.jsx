@@ -76,30 +76,30 @@ export default function USPSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: idx * 0.08 }}
-                className="bg-white dark:glass-card p-5 sm:p-7 rounded-2xl relative overflow-hidden group flex flex-col justify-between border border-stone-200 dark:border-white/10 shadow-sm hover:shadow-md transition-all"
+                className="liquid-glass-card p-5 sm:p-7 rounded-2xl relative overflow-hidden group flex flex-col justify-between"
               >
                 {/* Subtle top indicator */}
-                <div className="absolute top-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-amber-400/40 dark:via-ceylon-gold/40 to-transparent" />
+                <div className="absolute top-0 left-6 right-6 h-[1.5px] bg-gradient-to-r from-transparent via-amber-400/50 dark:via-ceylon-gold/40 to-transparent" />
 
                 <div>
                   <div className="flex items-center justify-between mb-4 sm:mb-5">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white dark:bg-gradient-to-br dark:from-ceylon-gold/20 dark:to-emerald-900/60 border border-amber-300 dark:border-ceylon-gold/30 flex items-center justify-center text-amber-700 dark:text-ceylon-gold shadow-sm group-hover:scale-110 transition-transform">
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-amber-100/80 dark:bg-ceylon-gold/20 border border-amber-300 dark:border-ceylon-gold/30 flex items-center justify-center text-amber-800 dark:text-ceylon-gold shadow-sm group-hover:scale-110 transition-transform">
                       <Icon size={20} className="sm:w-6 sm:h-6" />
                     </div>
-                    <span className="text-[10px] sm:text-[11px] font-semibold uppercase tracking-wider text-emerald-800 dark:text-emerald-300 bg-white dark:bg-emerald-950/80 px-2.5 py-1 rounded-md border border-emerald-300 dark:border-emerald-500/20 shadow-sm">
+                    <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-emerald-900 dark:text-emerald-300 bg-emerald-100/90 dark:bg-emerald-950/80 px-2.5 py-1 rounded-md border border-emerald-400/60 dark:border-emerald-500/20 shadow-sm">
                       {item.highlight}
                     </span>
                   </div>
 
-                  <h3 className="font-serif text-base sm:text-lg font-bold text-stone-900 dark:text-white mb-2 group-hover:text-amber-600 dark:group-hover:text-ceylon-gold transition-colors">
+                  <h3 className="font-serif text-base sm:text-lg font-bold text-stone-950 dark:text-white mb-2 group-hover:text-amber-700 dark:group-hover:text-ceylon-gold transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-stone-600 dark:text-stone-300 text-xs sm:text-sm leading-relaxed font-normal dark:font-light">
+                  <p className="text-stone-700 dark:text-stone-300 text-xs sm:text-sm leading-relaxed font-normal">
                     {item.desc}
                   </p>
                 </div>
 
-                <div className="pt-3 sm:pt-4 mt-3 sm:mt-4 border-t border-stone-200 dark:border-white/5 flex items-center text-[11px] sm:text-xs text-stone-500 dark:text-stone-400 group-hover:text-stone-800 dark:group-hover:text-stone-200">
+                <div className="pt-3 sm:pt-4 mt-3 sm:mt-4 border-t border-stone-200/80 dark:border-white/10 flex items-center text-[11px] sm:text-xs text-stone-600 dark:text-stone-400 group-hover:text-stone-900 dark:group-hover:text-stone-200">
                   <span>Included with every day booking</span>
                 </div>
               </motion.div>

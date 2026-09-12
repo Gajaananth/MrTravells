@@ -36,9 +36,9 @@ export default function HeroSection() {
               Explore ancient rock fortresses, misty Ceylon tea hills, coastal Trincomalee, and wild elephant safaris with your own dedicated private air-conditioned vehicle and licensed local guide.
             </p>
 
-            {/* Key Trust Highlights Strip - Clean Pure White in Light Mode */}
+            {/* Key Trust Highlights Strip */}
             <div className="grid grid-cols-3 gap-2 sm:gap-3 py-1 sm:py-2 max-w-xl">
-              <div className="p-2.5 sm:p-3 rounded-xl bg-white dark:glass-card border border-stone-200 dark:border-white/10 shadow-sm text-center sm:text-left">
+              <div className="p-2.5 sm:p-3 rounded-xl liquid-glass-card text-center sm:text-left">
                 <div className="flex items-center justify-center sm:justify-start gap-0.5 sm:gap-1 text-amber-500 dark:text-ceylon-gold mb-1">
                   <Star size={12} className="fill-current sm:w-3.5 sm:h-3.5" />
                   <Star size={12} className="fill-current sm:w-3.5 sm:h-3.5" />
@@ -46,26 +46,26 @@ export default function HeroSection() {
                   <Star size={12} className="fill-current sm:w-3.5 sm:h-3.5" />
                   <Star size={12} className="fill-current sm:w-3.5 sm:h-3.5" />
                 </div>
-                <div className="text-[11px] sm:text-xs font-bold text-stone-900 dark:text-white leading-tight">5.0 Star Rated</div>
-                <div className="text-[10px] sm:text-[11px] text-stone-500 dark:text-stone-400">100+ Happy Guests</div>
+                <div className="text-[11px] sm:text-xs font-bold text-stone-950 dark:text-white leading-tight">5.0 Star Rated</div>
+                <div className="text-[10px] sm:text-[11px] text-stone-600 dark:text-stone-300 font-medium">100+ Happy Guests</div>
               </div>
 
-              <div className="p-2.5 sm:p-3 rounded-xl bg-white dark:glass-card border border-stone-200 dark:border-white/10 shadow-sm text-center sm:text-left">
-                <div className="text-emerald-700 dark:text-emerald-400 text-xs sm:text-sm font-bold flex items-center justify-center sm:justify-start gap-1 mb-1">
+              <div className="p-2.5 sm:p-3 rounded-xl liquid-glass-card text-center sm:text-left">
+                <div className="text-emerald-800 dark:text-emerald-400 text-xs sm:text-sm font-bold flex items-center justify-center sm:justify-start gap-1 mb-1">
                   <ShieldCheck size={14} className="sm:w-4 sm:h-4" />
                   <span>Licensed</span>
                 </div>
-                <div className="text-[11px] sm:text-xs font-bold text-stone-900 dark:text-white leading-tight">Tourist Chauffeur</div>
-                <div className="text-[10px] sm:text-[11px] text-stone-500 dark:text-stone-400">12+ Years Experience</div>
+                <div className="text-[11px] sm:text-xs font-bold text-stone-950 dark:text-white leading-tight">Tourist Chauffeur</div>
+                <div className="text-[10px] sm:text-[11px] text-stone-600 dark:text-stone-300 font-medium">12+ Years Experience</div>
               </div>
 
-              <div className="p-2.5 sm:p-3 rounded-xl bg-white dark:glass-card border border-stone-200 dark:border-white/10 shadow-sm text-center sm:text-left">
-                <div className="text-amber-700 dark:text-ceylon-gold text-xs sm:text-sm font-bold flex items-center justify-center sm:justify-start gap-1 mb-1">
+              <div className="p-2.5 sm:p-3 rounded-xl liquid-glass-card text-center sm:text-left">
+                <div className="text-amber-800 dark:text-ceylon-gold text-xs sm:text-sm font-bold flex items-center justify-center sm:justify-start gap-1 mb-1">
                   <Award size={14} className="sm:w-4 sm:h-4" />
                   <span>Honest</span>
                 </div>
-                <div className="text-[11px] sm:text-xs font-bold text-stone-900 dark:text-white leading-tight">All-Inclusive LKR</div>
-                <div className="text-[10px] sm:text-[11px] text-stone-500 dark:text-stone-400">Tolls & Fuel Included</div>
+                <div className="text-[11px] sm:text-xs font-bold text-stone-950 dark:text-white leading-tight">All-Inclusive LKR</div>
+                <div className="text-[10px] sm:text-[11px] text-stone-600 dark:text-stone-300 font-medium">Tolls & Fuel Included</div>
               </div>
             </div>
 
@@ -102,7 +102,7 @@ export default function HeroSection() {
 
           {/* Right Column: Premium Showcase (No Animation) */}
           <div className="lg:col-span-5 relative mt-2 lg:mt-0">
-            <div className="w-full rounded-3xl overflow-hidden bg-white dark:glass-card relative shadow-xl dark:shadow-2xl border border-stone-200 dark:border-emerald-500/25 p-3 sm:p-4 transition-all">
+            <div className="w-full rounded-3xl overflow-hidden liquid-glass-card relative p-3 sm:p-4 transition-all">
               
               {/* Feature Image with Scenic Sri Lanka & Tour Comfort */}
               <div className="relative h-64 sm:h-80 lg:h-96 rounded-2xl overflow-hidden shadow-inner">
@@ -138,13 +138,13 @@ export default function HeroSection() {
 
               {/* Bottom Feature Badges Strip */}
               <div className="mt-3 pt-2 grid grid-cols-3 gap-2 text-center text-[10px] sm:text-xs">
-                <div className="p-2 rounded-xl bg-white dark:bg-white/5 border border-stone-200 dark:border-white/10 text-stone-700 dark:text-stone-300 font-medium">
+                <div className="p-2 rounded-xl liquid-glass-card text-stone-800 dark:text-stone-200 font-semibold">
                   ❄️ Dual Climate A/C
                 </div>
-                <div className="p-2 rounded-xl bg-white dark:bg-white/5 border border-stone-200 dark:border-white/10 text-stone-700 dark:text-stone-300 font-medium">
+                <div className="p-2 rounded-xl liquid-glass-card text-stone-800 dark:text-stone-200 font-semibold">
                   📶 Free 4G Wi-Fi
                 </div>
-                <div className="p-2 rounded-xl bg-white dark:bg-white/5 border border-stone-200 dark:border-white/10 text-stone-700 dark:text-stone-300 font-medium">
+                <div className="p-2 rounded-xl liquid-glass-card text-stone-800 dark:text-stone-200 font-semibold">
                   💧 Chilled Water
                 </div>
               </div>

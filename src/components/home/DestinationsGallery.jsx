@@ -332,7 +332,7 @@ export default function DestinationsGallery() {
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="bg-white dark:bg-[#062619] border border-stone-200 dark:border-ceylon-gold/40 rounded-2xl sm:rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl relative text-left my-auto"
+              className="liquid-glass-card rounded-2xl sm:rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl relative text-left my-auto"
             >
               {/* Close Button */}
               <button
@@ -354,14 +354,14 @@ export default function DestinationsGallery() {
                   <span className="px-2.5 py-0.5 rounded-full bg-amber-400 dark:bg-ceylon-gold text-stone-900 dark:text-ceylon-dark font-bold text-[10px] sm:text-xs">
                     {activeModal.badge}
                   </span>
-                  <h3 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 dark:text-white mt-1">
+                  <h3 className="font-serif text-2xl sm:text-3xl font-bold text-stone-950 dark:text-white mt-1">
                     {activeModal.name}
                   </h3>
                 </div>
               </div>
 
               <div className="p-5 sm:p-7 space-y-3 sm:space-y-4">
-                <p className="text-stone-600 dark:text-stone-300 text-xs sm:text-sm leading-relaxed">
+                <p className="text-stone-800 dark:text-stone-300 text-xs sm:text-sm font-normal leading-relaxed">
                   {activeModal.description}
                 </p>
 

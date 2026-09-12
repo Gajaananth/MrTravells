@@ -25,10 +25,10 @@ export default function PackageCard({ pkg, onEnquire }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="bg-white dark:bg-[#07251a]/80 rounded-2xl sm:rounded-3xl overflow-hidden border border-stone-200 dark:border-ceylon-gold/25 shadow-xl relative text-left group flex flex-col lg:flex-row transition-colors"
+      className="liquid-glass-card rounded-2xl sm:rounded-3xl overflow-hidden relative text-left group flex flex-col lg:flex-row shadow-xl"
     >
       {/* Left Column: Image Gallery & Visuals */}
-      <div className="lg:w-5/12 flex flex-col justify-between p-3.5 sm:p-6 bg-white dark:bg-black/20 border-b lg:border-b-0 lg:border-r border-stone-200 dark:border-white/10">
+      <div className="lg:w-5/12 flex flex-col justify-between p-3.5 sm:p-6 bg-transparent border-b lg:border-b-0 lg:border-r border-stone-200/80 dark:border-white/10">
         <div>
           {/* Main Selected Image */}
           <div className="h-56 sm:h-72 lg:h-80 rounded-xl sm:rounded-2xl overflow-hidden relative shadow-lg">
@@ -110,10 +110,10 @@ export default function PackageCard({ pkg, onEnquire }) {
             <span className="text-[10px] sm:text-xs text-amber-700 dark:text-ceylon-gold font-bold uppercase tracking-widest block mb-0.5">
               {pkg.tagline}
             </span>
-            <h3 className="font-serif text-xl sm:text-2xl lg:text-3xl font-bold text-stone-900 dark:text-white group-hover:text-amber-700 dark:group-hover:text-ceylon-gold transition-colors">
+            <h3 className="font-serif text-xl sm:text-2xl lg:text-3xl font-bold text-stone-950 dark:text-white group-hover:text-amber-700 dark:group-hover:text-ceylon-gold transition-colors">
               {pkg.title}
             </h3>
-            <p className="text-stone-600 dark:text-stone-300 text-xs sm:text-sm font-normal dark:font-light mt-1.5 leading-relaxed">
+            <p className="text-stone-700 dark:text-stone-300 text-xs sm:text-sm font-normal mt-1.5 leading-relaxed">
               {pkg.overview}
             </p>
           </div>
@@ -154,10 +154,10 @@ export default function PackageCard({ pkg, onEnquire }) {
                     </span>
                     <div>
                       <div className="flex items-center gap-1.5 sm:gap-2">
-                        <span className="font-bold text-amber-700 dark:text-amber-300 text-[10px] sm:text-[11px]">{item.time}</span>
-                        <span className="text-stone-900 dark:text-white font-semibold text-xs">{item.title}</span>
+                        <span className="font-bold text-amber-800 dark:text-amber-300 text-[10px] sm:text-[11px]">{item.time}</span>
+                        <span className="text-stone-950 dark:text-white font-bold text-xs">{item.title}</span>
                       </div>
-                      <p className="text-stone-600 dark:text-stone-400 text-[11px] sm:text-xs mt-0.5 font-normal dark:font-light leading-relaxed">
+                      <p className="text-stone-700 dark:text-stone-300 text-[11px] sm:text-xs mt-0.5 font-normal leading-relaxed">
                         {item.desc}
                       </p>
                     </div>

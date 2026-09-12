@@ -84,26 +84,26 @@ export default function EnquirySection({ prefillPackage = '' }) {
                 href={getWhatsAppLink()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white dark:glass-card p-3.5 sm:p-4 rounded-2xl flex items-center gap-3 sm:gap-4 group cursor-pointer border border-stone-200 dark:border-emerald-500/30 shadow-sm hover:shadow-md transition-all"
+                className="liquid-glass-card p-3.5 sm:p-4 rounded-2xl flex items-center gap-3 sm:gap-4 group cursor-pointer"
               >
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#25D366]/20 text-[#25D366] flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                   <MessageCircle size={22} />
                 </div>
                 <div>
-                  <div className="text-[11px] sm:text-xs text-stone-500 dark:text-stone-400">Fastest Response (Instant WhatsApp)</div>
-                  <div className="text-xs sm:text-sm font-bold text-stone-900 dark:text-white group-hover:text-emerald-700 dark:group-hover:text-emerald-300 transition-colors">
+                  <div className="text-[11px] sm:text-xs text-stone-600 dark:text-stone-400 font-medium">Fastest Response (Instant WhatsApp)</div>
+                  <div className="text-xs sm:text-sm font-bold text-stone-950 dark:text-white group-hover:text-emerald-700 dark:group-hover:text-emerald-300 transition-colors">
                     Chat on WhatsApp: +94 77 123 4567
                   </div>
                 </div>
               </a>
 
-              <div className="bg-white dark:glass-card p-3.5 sm:p-4 rounded-2xl flex items-center gap-3 sm:gap-4 border border-stone-200 dark:border-white/10 shadow-sm">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-white dark:bg-ceylon-gold/20 border border-amber-300 dark:border-transparent text-amber-700 dark:text-ceylon-gold flex items-center justify-center shrink-0">
+              <div className="liquid-glass-card p-3.5 sm:p-4 rounded-2xl flex items-center gap-3 sm:gap-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-amber-100/80 dark:bg-ceylon-gold/20 border border-amber-300 dark:border-transparent text-amber-800 dark:text-ceylon-gold flex items-center justify-center shrink-0">
                   <Mail size={20} />
                 </div>
                 <div>
-                  <div className="text-[11px] sm:text-xs text-stone-500 dark:text-stone-400">Direct Email</div>
-                  <div className="text-xs sm:text-sm font-bold text-stone-900 dark:text-white">
+                  <div className="text-[11px] sm:text-xs text-stone-600 dark:text-stone-400 font-medium">Direct Email</div>
+                  <div className="text-xs sm:text-sm font-bold text-stone-950 dark:text-white">
                     {APP_CONFIG.email}
                   </div>
                 </div>
@@ -118,7 +118,7 @@ export default function EnquirySection({ prefillPackage = '' }) {
 
           {/* Right Column: Interactive Form */}
           <div className="lg:col-span-7">
-            <div className="bg-white dark:glass-card p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl border border-stone-200 dark:border-ceylon-gold/30 shadow-lg dark:shadow-2xl relative">
+            <div className="liquid-glass-card p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl relative">
               
               {submitted ? (
                 <motion.div
