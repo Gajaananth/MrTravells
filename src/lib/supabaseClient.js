@@ -23,7 +23,7 @@ export const INITIAL_REVIEWS = [
     package_name: "Sigiriya Lion Rock & Dambulla Cave Temples",
     rating: 5,
     comment: "MR Travels & Tours made our first trip to Sri Lanka completely unforgettable! The car was immaculate, cold mineral water was ready after the hot Sigiriya climb, and our driver's deep knowledge of local history avoided all the crowded tourist bottlenecks. Truly 5-star service!",
-    image_url: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=600&q=80",
+    image_url: "/images/destinations/sigiriya.jpg",
     created_at: "2026-02-18T10:30:00Z",
     is_approved: true
   },
@@ -34,7 +34,7 @@ export const INITIAL_REVIEWS = [
     package_name: "Kandy, Tea Plantations & Highland Scenic Route",
     rating: 5,
     comment: "Traveling with a small child can be stressful, but having a dedicated, patient driver with a safe, super comfortable car made the highland journey smooth and joyful. The Ceylon tea factory stop and Ramboda waterfall view were magical.",
-    image_url: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+    image_url: "/images/packages/ramboda.jpg",
     created_at: "2026-02-25T14:15:00Z",
     is_approved: true
   },
@@ -45,7 +45,7 @@ export const INITIAL_REVIEWS = [
     package_name: "Galle Dutch Fort & Southern Coastal Discovery",
     rating: 5,
     comment: "The best decision we made in Sri Lanka! Clean air-conditioned sedan, courteous driving, and we were taken to an incredible family-run clay pot curry lunch near Galle that no big tour bus would ever find. Worth every rupee.",
-    image_url: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+    image_url: "/images/packages/galle-fort.jpg",
     created_at: "2026-03-02T09:00:00Z",
     is_approved: true
   },
@@ -54,10 +54,32 @@ export const INITIAL_REVIEWS = [
     customer_name: "Julian & Clara Becker",
     country: "Germany",
     package_name: "Udawalawe Wild Elephant Safari & Elephant Transit",
-    rating: 4,
+    rating: 5,
     comment: "Fantastic day seeing dozens of wild elephant families in Udawalawe. MR Travels arranged our safari jeep seamlessly without any hassle or waiting in lines. Safe driving on the country roads. Highly recommended.",
-    image_url: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+    image_url: "/images/packages/safari-elephants.jpg",
     created_at: "2026-03-08T17:40:00Z",
+    is_approved: true
+  },
+  {
+    id: "rev-5",
+    customer_name: "Liam & Chloe Vance",
+    country: "Australia",
+    package_name: "Trincomalee, Koneswaram Temple & Nilaveli Beach",
+    rating: 5,
+    comment: "The cliffside views at Koneswaram Temple and Swami Rock were breathtaking. Crystal clear ocean at Nilaveli Beach and we even spotted friendly spotted deer roaming inside Fort Frederick! A truly incredible day trip.",
+    image_url: "/images/destinations/trincomalee.webp",
+    created_at: "2026-03-10T11:20:00Z",
+    is_approved: true
+  },
+  {
+    id: "rev-6",
+    customer_name: "Mateo & Isabella Rossi",
+    country: "Italy",
+    package_name: "Ella Nine Arches Bridge & Mountain Peaks",
+    rating: 5,
+    comment: "Arrived right on time to watch the blue train cross Nine Arches Bridge from the best vantage point. Our chauffeur knew the secret walking trails away from the crowds. Best photos of our entire holiday!",
+    image_url: "/images/destinations/ella.jpg",
+    created_at: "2026-03-11T15:45:00Z",
     is_approved: true
   }
 ];

@@ -26,6 +26,7 @@ export default function Navbar() {
     { label: 'Home', path: '/' },
     { label: 'All Packages', path: '/packages' },
     { label: 'Destinations', path: '/#destinations' },
+    { label: 'Gallery', path: '/#gallery' },
     { label: 'Why Us', path: '/#usp' },
     { label: 'Guest Reviews', path: '/#reviews' },
     { label: 'Enquire', path: '/#enquiry' },

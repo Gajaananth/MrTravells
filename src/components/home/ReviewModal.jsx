@@ -59,7 +59,8 @@ export default function ReviewModal({ isOpen, onClose, onReviewAdded }) {
     try {
       const payload = {
         ...formData,
-        rating
+        rating,
+        image_url: formData.image_base64 || null
       };
 
       const result = await submitReview(payload);
@@ -71,8 +72,13 @@ export default function ReviewModal({ isOpen, onClose, onReviewAdded }) {
             confetti({ particleCount: 80, spread: 70, origin: { y: 0.6 } });
           } catch (e) {}
         }
-        if (onReviewAdded && result.review) {
-          onReviewAdded(result.review);
+        if (result.review) {
+          try {
+            window.dispatchEvent(new CustomEvent('new-review-added', { detail: result.review }));
+          } catch (e) {}
+          if (onReviewAdded) {
+            onReviewAdded(result.review);
+          }
         }
       } else {
         setErrorMsg(result?.error || 'Failed to submit review. Please check your details and retry.');

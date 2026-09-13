@@ -122,15 +122,15 @@ export default function Footer() {
           <div>
             <h4 className="font-serif text-sm sm:text-base font-semibold text-stone-900 dark:text-white mb-3 sm:mb-4 flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-amber-500 dark:bg-ceylon-gold" />
-              Tour Vehicle
+              Vehicle Fleet
             </h4>
             <div className="bg-white dark:glass-card border border-stone-200 dark:border-white/10 p-3.5 sm:p-4 rounded-xl space-y-2 text-xs text-stone-700 dark:text-stone-300">
               <div className="flex items-center gap-2 text-amber-700 dark:text-ceylon-gold font-semibold">
-                <span>🚗</span>
-                <span>Dedicated Luxury Sedan</span>
+                <span>🚗 🚐 🚌</span>
+                <span>Cars · Vans · Buses</span>
               </div>
               <p className="text-stone-600 dark:text-stone-400 leading-relaxed text-[11px] sm:text-xs">
-                Toyota Hybrid sedan featuring whisper-quiet air conditioning, plush seating for up to 3 passengers + luggage, free onboard Wi-Fi & chilled bottled refreshments.
+                Private air-conditioned sedans (up to 4 pax), spacious passenger vans (up to 10 pax), and tour coaches (10+ pax). Free chilled mineral water and dedicated chauffeur guide.
               </p>
               <div className="pt-2 border-t border-stone-200 dark:border-white/10 flex items-center justify-between text-stone-500 dark:text-stone-400 text-[11px]">
                 <span>Sri Lanka Islandwide</span>
