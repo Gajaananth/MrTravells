@@ -60,9 +60,6 @@ export default function DestinationsGallery() {
               <span className="px-2.5 sm:px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[11px] sm:text-xs font-semibold text-amber-300">
                 {DESTINATIONS[0].badge}
               </span>
-              <span className="text-xs sm:text-sm font-serif italic text-white/70 px-2.5 py-0.5 rounded-full bg-black/40 backdrop-blur-sm">
-                {DESTINATIONS[0].sinhala}
-              </span>
             </div>
 
             <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 z-10 space-y-1 sm:space-y-2 text-left">
@@ -109,9 +106,6 @@ export default function DestinationsGallery() {
             <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
               <span className="px-2.5 sm:px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[11px] sm:text-xs font-semibold text-amber-300">
                 {DESTINATIONS[1].badge}
-              </span>
-              <span className="text-xs sm:text-sm font-serif italic text-white/70 px-2.5 py-0.5 rounded-full bg-black/40 backdrop-blur-sm">
-                {DESTINATIONS[1].sinhala}
               </span>
             </div>
 

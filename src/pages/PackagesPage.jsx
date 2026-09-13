@@ -50,24 +50,24 @@ export default function PackagesPage() {
             <div className="space-y-2 max-w-3xl">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white dark:bg-emerald-950/80 border border-amber-300 dark:border-ceylon-gold/30 text-xs font-semibold text-amber-800 dark:text-ceylon-gold uppercase tracking-wider shadow-sm">
                 <Compass size={14} />
-                <span>Single-Car Private Tours</span>
+                <span>Private Guided Tours & Transfers</span>
               </div>
               <h1 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-extrabold text-stone-900 dark:text-white tracking-tight">
                 Sri Lanka Private <span className="text-gold-gradient font-serif">Day Packages</span>
               </h1>
               <p className="text-stone-600 dark:text-stone-300 text-xs sm:text-base font-normal dark:font-light leading-relaxed">
-                Every tour is 100% private in a dedicated luxury hybrid sedan with your own licensed guide. Upfront vehicle pricing in Sri Lankan Rupees (LKR) covers up to 3 passengers, tolls, fuel, and chauffeur expenses.
+                Every tour is 100% private and tailored to your party. We offer comfortable private cars (up to 4 passengers), spacious passenger vans (up to 10 passengers), or mini-buses/buses (10+ passengers) with your own dedicated licensed chauffeur guide. Consult with us directly for instant customized pricing based on your group size.
               </p>
             </div>
 
-            {/* Vehicle Guarantee Pill */}
+            {/* Vehicle Options Pill */}
             <div className="liquid-glass-card p-3 sm:p-4 rounded-xl sm:rounded-2xl flex items-center gap-3 text-left shrink-0">
               <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-amber-100/80 dark:bg-ceylon-gold/20 border border-amber-300 dark:border-transparent flex items-center justify-center text-amber-800 dark:text-ceylon-gold shrink-0">
                 <ShieldCheck size={20} />
               </div>
               <div className="text-xs">
-                <div className="text-stone-950 dark:text-white font-bold">1 Dedicated Sedan Only</div>
-                <div className="text-stone-600 dark:text-stone-400 font-medium">Exclusive VIP pacing, no sharing</div>
+                <div className="text-stone-950 dark:text-white font-bold">Cars · Vans · Buses Available</div>
+                <div className="text-stone-600 dark:text-stone-400 font-medium">1 to 30+ passengers, VIP pacing</div>
               </div>
             </div>
           </div>

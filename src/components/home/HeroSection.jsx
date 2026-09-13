@@ -33,7 +33,7 @@ export default function HeroSection() {
 
             {/* Subheadline */}
             <p className="text-sm sm:text-base lg:text-lg text-stone-600 dark:text-stone-300 max-w-2xl leading-relaxed font-normal dark:font-light">
-              Explore ancient rock fortresses, misty Ceylon tea hills, coastal Trincomalee, and wild elephant safaris with your own dedicated private air-conditioned vehicle and licensed local guide.
+              Explore ancient rock fortresses, misty Ceylon tea hills, coastal Trincomalee, and wild elephant safaris with your own dedicated private air-conditioned vehicle (Cars, Vans, or Buses) and licensed local guide.
             </p>
 
             {/* Key Trust Highlights Strip */}
@@ -62,10 +62,10 @@ export default function HeroSection() {
               <div className="p-2.5 sm:p-3 rounded-xl liquid-glass-card text-center sm:text-left">
                 <div className="text-amber-800 dark:text-ceylon-gold text-xs sm:text-sm font-bold flex items-center justify-center sm:justify-start gap-1 mb-1">
                   <Award size={14} className="sm:w-4 sm:h-4" />
-                  <span>Honest</span>
+                  <span>Vehicle Fleet</span>
                 </div>
-                <div className="text-[11px] sm:text-xs font-bold text-stone-950 dark:text-white leading-tight">All-Inclusive LKR</div>
-                <div className="text-[10px] sm:text-[11px] text-stone-600 dark:text-stone-300 font-medium">Tolls & Fuel Included</div>
+                <div className="text-[11px] sm:text-xs font-bold text-stone-950 dark:text-white leading-tight">Cars · Vans · Buses</div>
+                <div className="text-[10px] sm:text-[11px] text-stone-600 dark:text-stone-300 font-medium">Consult for Rates</div>
               </div>
             </div>
 

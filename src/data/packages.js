@@ -1,15 +1,19 @@
-// Static Packages Data for Single-Car Private Tours - All pricing in LKR only
+// Static Packages Data for Private Guided Tours across Sri Lanka
+// Vehicles available: Private Cars (up to 4 pax), Passenger Vans (up to 10 pax), Mini-Buses & Coaches (10+ pax)
+// Pricing is customized based on vehicle choice and group size. Consult for details.
 export const PACKAGES = [
   {
     id: "sigiriya-dambulla-day",
     title: "Sigiriya Lion Rock & Dambulla Cave Temples",
     tagline: "The UNESCO Cultural Triangle Heritage Day Tour",
     duration: "1 Day (Full Day)",
-    pricing: {
-      lkr: "35,000",
-      formatted: "LKR 35,000",
-      type: "Per Vehicle (Up to 3 Guests)"
+    vehicleCapacity: {
+      car: "Car (Up to 4 Guests)",
+      van: "Van (Up to 10 Guests)",
+      bus: "Mini-Bus / Coach (10+ Guests)"
     },
+    vehicleOptionsText: "Cars (up to 4) · Vans (up to 10) · Buses (10+)",
+    pricingNote: "Consult for custom quote based on vehicle & group size",
     featured: true,
     heroImage: "/images/packages/sigiriya-pkg.jpg",
     gallery: [
@@ -19,15 +23,15 @@ export const PACKAGES = [
     ],
     overview: "Ascend the legendary 5th-century Sigiriya Lion Rock citadel rising above tropical jungle canopies. Followed by the world-famous UNESCO Dambulla Cave Temple shrines filled with gilded Buddha statues and an authentic Sri Lankan village lunch.",
     highlights: [
-      "Early departure from Colombo, Negombo, or Kandy in comfortable A/C car",
+      "Early departure from Colombo, Negombo, or Kandy in comfortable A/C vehicle",
       "Sigiriya Lion Rock Fortress climb with panoramic jungle vistas",
       "Authentic clay-pot rice and curry feast in a rural village setting",
       "Dambulla Golden Cave Temple containing 153 historic Buddha statues",
       "Flexible spice garden walk and Ceylon gems demonstration"
     ],
     included: [
-      "Private air-conditioned luxury sedan vehicle",
-      "Dedicated English-speaking driver-guide",
+      "Private air-conditioned vehicle (Car up to 4, Van up to 10, or Bus for larger groups)",
+      "Dedicated licensed English-speaking chauffeur guide",
       "Highway tolls, fuel, parking charges & driver expenses",
       "Chilled bottled mineral water",
       "Door-to-door hotel pick-up & drop-off"
@@ -50,11 +54,13 @@ export const PACKAGES = [
     title: "Kandy, Tea Plantations & Highland Scenic Route",
     tagline: "Emerald Tea Valleys, Waterfalls & Mountain Vistas",
     duration: "1 Day (Full Day)",
-    pricing: {
-      lkr: "38,500",
-      formatted: "LKR 38,500",
-      type: "Per Vehicle (Up to 3 Guests)"
+    vehicleCapacity: {
+      car: "Car (Up to 4 Guests)",
+      van: "Van (Up to 10 Guests)",
+      bus: "Mini-Bus / Coach (10+ Guests)"
     },
+    vehicleOptionsText: "Cars (up to 4) · Vans (up to 10) · Buses (10+)",
+    pricingNote: "Consult for custom quote based on vehicle & group size",
     featured: true,
     heroImage: "/images/packages/highland-tea.jpg",
     gallery: [
@@ -71,8 +77,8 @@ export const PACKAGES = [
       "Photo stop at twin tumbling mountain waterfalls"
     ],
     included: [
-      "Private luxury car with panoramic windows",
-      "Experienced licensed driver-guide",
+      "Private air-conditioned vehicle (Car up to 4, Van up to 10, or Bus for larger groups)",
+      "Experienced licensed chauffeur guide",
       "All fuel, expressway tolls, and parking costs",
       "Complimentary Ceylon tea factory tour & tasting",
       "Hotel pick-up/drop-off in Kandy, Nuwara Eliya, or Colombo"
@@ -80,7 +86,7 @@ export const PACKAGES = [
     excluded: [
       "Personal lunch and personal refreshments",
       "Optional boat rides on Gregory Lake",
-      "Driver tips"
+      "Driver gratuities"
     ],
     schedule: [
       { time: "07:30 AM", title: "Highland Ascent", desc: "Scenic hill country drive through mountain fog and pine groves" },
@@ -95,11 +101,13 @@ export const PACKAGES = [
     title: "Galle Dutch Fort & Southern Coastal Discovery",
     tagline: "Colonial ramparts, Sea Turtles & Stilt Fishermen",
     duration: "1 Day (10 - 12 Hours)",
-    pricing: {
-      lkr: "36,000",
-      formatted: "LKR 36,000",
-      type: "Per Vehicle (Up to 3 Guests)"
+    vehicleCapacity: {
+      car: "Car (Up to 4 Guests)",
+      van: "Van (Up to 10 Guests)",
+      bus: "Mini-Bus / Coach (10+ Guests)"
     },
+    vehicleOptionsText: "Cars (up to 4) · Vans (up to 10) · Buses (10+)",
+    pricingNote: "Consult for custom quote based on vehicle & group size",
     featured: true,
     heroImage: "/images/packages/galle-fort.jpg",
     gallery: [
@@ -116,8 +124,8 @@ export const PACKAGES = [
       "Sunset over Indian Ocean beaches with fresh tropical sea breeze"
     ],
     included: [
-      "Private A/C sedan with comfortable seating",
-      "Experienced driver-guide with historical knowledge",
+      "Private air-conditioned vehicle (Car up to 4, Van up to 10, or Bus for larger groups)",
+      "Experienced chauffeur guide with historical knowledge",
       "All expressway tolls, fuel, and municipal parking",
       "Bottled chilled mineral water",
       "Hotel pick-up & drop-off along the Western or Southern coast"
@@ -140,11 +148,13 @@ export const PACKAGES = [
     title: "Ella Nine Arches Bridge & Mountain Peaks",
     tagline: "Iconic Colonial Viaduct, Little Adam's Peak & Ravana Falls",
     duration: "1 Day (Full Day)",
-    pricing: {
-      lkr: "40,000",
-      formatted: "LKR 40,000",
-      type: "Per Vehicle (Up to 3 Guests)"
+    vehicleCapacity: {
+      car: "Car (Up to 4 Guests)",
+      van: "Van (Up to 10 Guests)",
+      bus: "Mini-Bus / Coach (10+ Guests)"
     },
+    vehicleOptionsText: "Cars (up to 4) · Vans (up to 10) · Buses (10+)",
+    pricingNote: "Consult for custom quote based on vehicle & group size",
     featured: false,
     heroImage: "/images/destinations/ella.jpg",
     gallery: [
@@ -161,8 +171,8 @@ export const PACKAGES = [
       "Smooth door-to-door mountain transportation with experienced driver"
     ],
     included: [
-      "Private A/C sedan with mountain-handling capability",
-      "Dedicated local driver-guide",
+      "Private air-conditioned vehicle (Car up to 4, Van up to 10, or Bus for larger groups)",
+      "Dedicated local chauffeur guide",
       "All expressway tolls, fuel, and parking fees",
       "Chilled bottled water",
       "Hotel pick-up & drop-off"
@@ -185,11 +195,13 @@ export const PACKAGES = [
     title: "Polonnaruwa Ancient City & Minneriya Safari",
     tagline: "Royal Citadel, Rock-Cut Buddhas & Wild Elephant Gathering",
     duration: "1 Day (12 - 14 Hours)",
-    pricing: {
-      lkr: "42,000",
-      formatted: "LKR 42,000",
-      type: "Per Vehicle (Up to 3 Guests)"
+    vehicleCapacity: {
+      car: "Car (Up to 4 Guests)",
+      van: "Van (Up to 10 Guests)",
+      bus: "Mini-Bus / Coach (10+ Guests)"
     },
+    vehicleOptionsText: "Cars (up to 4) · Vans (up to 10) · Buses (10+)",
+    pricingNote: "Consult for custom quote based on vehicle & group size",
     featured: false,
     heroImage: "/images/destinations/polonnaruwa.jpg",
     gallery: [
@@ -206,8 +218,8 @@ export const PACKAGES = [
       "Scenic countryside journey past lush paddy fields"
     ],
     included: [
-      "Private luxury sedan transport for the entire day",
-      "English-speaking driver-guide",
+      "Private air-conditioned vehicle (Car up to 4, Van up to 10, or Bus for larger groups)",
+      "English-speaking chauffeur guide",
       "Fuel, expressway tolls, and vehicle parking",
       "Bottled drinking water",
       "Assistance organizing park safari jeep"
@@ -230,11 +242,13 @@ export const PACKAGES = [
     title: "Udawalawe Wild Elephant Safari & Elephant Transit",
     tagline: "Encounter Majestic Herds in Sri Lanka's Serengeti",
     duration: "1 Day (12 - 14 Hours)",
-    pricing: {
-      lkr: "44,000",
-      formatted: "LKR 44,000",
-      type: "Per Vehicle (Up to 3 Guests)"
+    vehicleCapacity: {
+      car: "Car (Up to 4 Guests)",
+      van: "Van (Up to 10 Guests)",
+      bus: "Mini-Bus / Coach (10+ Guests)"
     },
+    vehicleOptionsText: "Cars (up to 4) · Vans (up to 10) · Buses (10+)",
+    pricingNote: "Consult for custom quote based on vehicle & group size",
     featured: false,
     heroImage: "/images/packages/safari-elephants.jpg",
     gallery: [
@@ -251,8 +265,8 @@ export const PACKAGES = [
       "Stop at rural roadside tropical fruit stands"
     ],
     included: [
-      "Private A/C sedan for the full round-trip transfers",
-      "Dedicated driver-guide for the day",
+      "Private air-conditioned vehicle (Car up to 4, Van up to 10, or Bus for larger groups)",
+      "Dedicated chauffeur guide for the day",
       "All highway tolls, fuel, and vehicle charges",
       "Assistance organizing park jeep and entrance formalities"
     ],
@@ -274,11 +288,13 @@ export const PACKAGES = [
     title: "Trincomalee, Koneswaram Temple & Nilaveli Beach",
     tagline: "Sacred Swami Rock, Nilaveli Sands & Marine Coral Sanctuary",
     duration: "1 Day (Full Day)",
-    pricing: {
-      lkr: "45,000",
-      formatted: "LKR 45,000",
-      type: "Per Vehicle (Up to 3 Guests)"
+    vehicleCapacity: {
+      car: "Car (Up to 4 Guests)",
+      van: "Van (Up to 10 Guests)",
+      bus: "Mini-Bus / Coach (10+ Guests)"
     },
+    vehicleOptionsText: "Cars (up to 4) · Vans (up to 10) · Buses (10+)",
+    pricingNote: "Consult for custom quote based on vehicle & group size",
     featured: true,
     heroImage: "/images/destinations/trincomalee.webp",
     gallery: [
@@ -295,8 +311,8 @@ export const PACKAGES = [
       "Fresh coastal seafood lunch overlooking the natural deep-water bay"
     ],
     included: [
-      "Private air-conditioned sedan vehicle for the entire day",
-      "Experienced licensed driver-guide",
+      "Private air-conditioned vehicle (Car up to 4, Van up to 10, or Bus for larger groups)",
+      "Experienced licensed chauffeur guide",
       "All highway tolls, fuel, driver expenses & municipal parking",
       "Chilled bottled drinking water",
       "Doorstep hotel pick-up & drop-off"

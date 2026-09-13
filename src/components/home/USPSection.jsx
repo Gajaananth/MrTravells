@@ -7,9 +7,9 @@ export default function USPSection() {
   const features = [
     {
       icon: Car,
-      title: "100% Private Luxury Sedan",
-      desc: "No sharing with strangers or waiting on big 40-person tour coaches. Your own modern, spotlessly clean Toyota sedan with panoramic views and whisper-quiet A/C.",
-      highlight: "Exclusive to Your Group"
+      title: "Cars, Vans & Buses For Any Group",
+      desc: "Whether you need a comfortable private sedan (up to 4 passengers), a spacious passenger van (up to 10 passengers), or a mini-bus / coach for 10+ passengers, your transport is 100% private for your group with zero sharing.",
+      highlight: "Cars · Vans · Buses"
     },
     {
       icon: Clock,
@@ -25,8 +25,8 @@ export default function USPSection() {
     },
     {
       icon: ShieldCheck,
-      title: "All-Inclusive & Honest Pricing (LKR)",
-      desc: "Expressway tolls, fuel, vehicle parking fees, and driver expenses are 100% included in the upfront LKR quote. No surprise charges at the end of the day.",
+      title: "Transparent & Custom Quotations",
+      desc: "Expressway tolls, fuel, vehicle parking fees, and driver expenses are 100% included in your tailored quote. Consult with us directly for transparent pricing based on your group size.",
       highlight: "Zero Hidden Costs"
     },
     {

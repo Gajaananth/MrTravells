@@ -35,47 +35,47 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Popular Day Tours in LKR */}
+          {/* Column 2: Popular Day Tours */}
           <div>
             <h4 className="font-serif text-sm sm:text-base font-semibold text-stone-900 dark:text-white mb-3 sm:mb-4 flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-amber-500 dark:bg-ceylon-gold" />
-              Day Tours (LKR Rates)
+              Popular Day Tours
             </h4>
             <ul className="space-y-2 text-xs sm:text-sm text-stone-600 dark:text-stone-400">
               <li>
                 <Link to="/packages" className="hover:text-amber-700 dark:hover:text-ceylon-gold transition-colors flex items-center justify-between group">
                   <span>Sigiriya Lion Rock & Dambulla</span>
-                  <span className="text-xs text-stone-500 group-hover:text-amber-700 dark:group-hover:text-ceylon-gold">LKR 35,000</span>
+                  <span className="text-xs text-stone-500 group-hover:text-amber-700 dark:group-hover:text-ceylon-gold">View Tour</span>
                 </Link>
               </li>
               <li>
                 <Link to="/packages" className="hover:text-amber-700 dark:hover:text-ceylon-gold transition-colors flex items-center justify-between group">
                   <span>Kandy, Tea Country & Waterfalls</span>
-                  <span className="text-xs text-stone-500 group-hover:text-amber-700 dark:group-hover:text-ceylon-gold">LKR 38,500</span>
+                  <span className="text-xs text-stone-500 group-hover:text-amber-700 dark:group-hover:text-ceylon-gold">View Tour</span>
                 </Link>
               </li>
               <li>
                 <Link to="/packages" className="hover:text-amber-700 dark:hover:text-ceylon-gold transition-colors flex items-center justify-between group">
                   <span>Trincomalee & Nilaveli Coast</span>
-                  <span className="text-xs text-stone-500 group-hover:text-amber-700 dark:group-hover:text-ceylon-gold">LKR 45,000</span>
+                  <span className="text-xs text-stone-500 group-hover:text-amber-700 dark:group-hover:text-ceylon-gold">View Tour</span>
                 </Link>
               </li>
               <li>
                 <Link to="/packages" className="hover:text-amber-700 dark:hover:text-ceylon-gold transition-colors flex items-center justify-between group">
                   <span>Galle Dutch Fort & Coast</span>
-                  <span className="text-xs text-stone-500 group-hover:text-amber-700 dark:group-hover:text-ceylon-gold">LKR 36,000</span>
+                  <span className="text-xs text-stone-500 group-hover:text-amber-700 dark:group-hover:text-ceylon-gold">View Tour</span>
                 </Link>
               </li>
               <li>
                 <Link to="/packages" className="hover:text-amber-700 dark:hover:text-ceylon-gold transition-colors flex items-center justify-between group">
                   <span>Ella Nine Arches Bridge</span>
-                  <span className="text-xs text-stone-500 group-hover:text-amber-700 dark:group-hover:text-ceylon-gold">LKR 40,000</span>
+                  <span className="text-xs text-stone-500 group-hover:text-amber-700 dark:group-hover:text-ceylon-gold">View Tour</span>
                 </Link>
               </li>
               <li>
                 <Link to="/packages" className="hover:text-amber-700 dark:hover:text-ceylon-gold transition-colors flex items-center justify-between group">
                   <span>Udawalawe Wildlife Safari</span>
-                  <span className="text-xs text-stone-500 group-hover:text-amber-700 dark:group-hover:text-ceylon-gold">LKR 44,000</span>
+                  <span className="text-xs text-stone-500 group-hover:text-amber-700 dark:group-hover:text-ceylon-gold">View Tour</span>
                 </Link>
               </li>
             </ul>

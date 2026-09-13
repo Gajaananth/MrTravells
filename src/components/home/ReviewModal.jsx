@@ -182,7 +182,7 @@ export default function ReviewModal({ isOpen, onClose, onReviewAdded }) {
                 >
                   {PACKAGES.map((pkg) => (
                     <option key={pkg.id} value={pkg.title}>
-                      {pkg.title} ({pkg.pricing.formatted})
+                      {pkg.title}
                     </option>
                   ))}
                   <option value="Custom Multi-Day Sri Lanka Tour">Custom Multi-Day Sri Lanka Tour</option>

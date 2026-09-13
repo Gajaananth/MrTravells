@@ -167,7 +167,7 @@ export default function EnquirySection({ prefillPackage = '' }) {
                 <form onSubmit={handleSubmit} className="space-y-3.5 sm:space-y-4 text-left">
                   <div className="mb-1 sm:mb-2">
                     <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900 dark:text-white">Request a Tour Quotation</h3>
-                    <p className="text-xs text-stone-500 dark:text-stone-400">Receive a tailored LKR quote within hours</p>
+                    <p className="text-xs text-stone-500 dark:text-stone-400">Receive a tailored quote within hours based on your vehicle choice and group size</p>
                   </div>
 
                   {/* Name */}
@@ -215,7 +215,7 @@ export default function EnquirySection({ prefillPackage = '' }) {
                     </div>
                   </div>
 
-                  {/* Package of Interest in LKR */}
+                  {/* Package of Interest */}
                   <div>
                     <label className="block text-xs font-medium text-stone-700 dark:text-stone-300 mb-1">
                       Interested Tour Package
@@ -227,7 +227,7 @@ export default function EnquirySection({ prefillPackage = '' }) {
                     >
                       {PACKAGES.map((pkg) => (
                         <option key={pkg.id} value={pkg.title}>
-                          {pkg.title} ({pkg.pricing.formatted})
+                          {pkg.title}
                         </option>
                       ))}
                       <option value="Custom Multi-Day Sri Lanka Tour">Custom Multi-Day Tour (Multiple destinations)</option>

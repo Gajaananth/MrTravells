@@ -24,10 +24,10 @@ export default function PackagesPreview({ onOpenEnquiry }) {
             </div>
             <h2 className="font-serif text-2xl sm:text-4xl lg:text-5xl font-bold text-stone-900 dark:text-white tracking-tight">
               Featured Private <br />
-              <span className="text-gold-gradient font-serif">Single-Car Packages</span>
+              <span className="text-gold-gradient font-serif">Island Packages</span>
             </h2>
             <p className="text-stone-600 dark:text-stone-300 text-xs sm:text-base font-normal dark:font-light">
-              Tailored for up to 3 guests in a dedicated luxury sedan. All-inclusive upfront LKR pricing covers vehicle, expressway tolls, fuel, chauffeur guide, and schedule freedom.
+              Available with your choice of vehicle: private cars (up to 4 pax), spacious passenger vans (up to 10 pax), or tour buses (10+ pax). Consult for custom pricing with expressway tolls, fuel, chauffeur guide, and schedule freedom.
             </p>
           </div>
 
@@ -52,7 +52,7 @@ export default function PackagesPreview({ onOpenEnquiry }) {
               className="liquid-glass-card rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col justify-between relative group shadow-md"
             >
               <div>
-                {/* Image Header with Price Badge in LKR */}
+                {/* Image Header with Vehicle & Consultation Badge */}
                 <div className="h-48 sm:h-56 relative overflow-hidden">
                   <img
                     src={pkg.heroImage}
@@ -68,14 +68,14 @@ export default function PackagesPreview({ onOpenEnquiry }) {
                       <Clock size={12} /> {pkg.duration}
                     </span>
                     <span className="px-2.5 sm:px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-[11px] sm:text-xs font-medium text-stone-200 flex items-center gap-1.5">
-                      <Users size={12} /> Up to 3 Guests
+                      <Users size={12} /> {pkg.vehicleOptionsText || 'Cars · Vans · Buses'}
                     </span>
                   </div>
 
-                  {/* Price Floating Pill - STRICTLY LKR */}
+                  {/* Price Floating Pill - Replaced with Consultation Badge */}
                   <div className="absolute bottom-3 right-3 bg-gradient-to-r from-amber-400 to-amber-500 dark:from-ceylon-gold dark:to-amber-500 text-stone-900 dark:text-ceylon-dark px-3 py-1.5 rounded-xl shadow-lg font-bold text-left">
-                    <div className="text-[9px] uppercase tracking-wider font-bold opacity-80">Vehicle Total</div>
-                    <div className="text-base sm:text-lg leading-tight font-serif font-extrabold">{pkg.pricing.formatted}</div>
+                    <div className="text-[9px] uppercase tracking-wider font-bold opacity-80">Custom Quote</div>
+                    <div className="text-sm sm:text-base leading-tight font-serif font-extrabold">Consult for Price</div>
                   </div>
                 </div>
 
@@ -111,13 +111,13 @@ export default function PackagesPreview({ onOpenEnquiry }) {
               <div className="p-4 sm:p-6 pt-0 space-y-2 sm:space-y-3">
                 {/* Specific WhatsApp Deep Link */}
                 <a
-                  href={getWhatsAppLink(`Hi MR Travels & Tours, I'm interested in the ${pkg.title} package (${pkg.pricing.formatted}).`)}
+                  href={getWhatsAppLink(`Hi MR Travels & Tours, I'm interested in the ${pkg.title} package. Please let me know the price details.`)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs tracking-wide shadow-md transition-all active:scale-95"
                 >
                   <MessageCircle size={16} />
-                  <span>Book on WhatsApp ({pkg.pricing.formatted})</span>
+                  <span>Consult on WhatsApp (Get Price)</span>
                 </a>
 
                 <div className="grid grid-cols-2 gap-2">
@@ -146,7 +146,7 @@ export default function PackagesPreview({ onOpenEnquiry }) {
           <div className="space-y-1 max-w-xl">
             <h4 className="font-serif text-lg sm:text-xl font-bold text-stone-950 dark:text-white">Need a Customized Multi-Day Tour?</h4>
             <p className="text-stone-700 dark:text-stone-300 text-xs sm:text-sm font-normal">
-              Want to combine Sigiriya Lion Rock, Ella Nine Arches, Nuwara Eliya, Trincomalee, Batticaloa, or Polonnaruwa across multiple days? We can design your exact custom route in LKR.
+              Want to combine Sigiriya Lion Rock, Ella Nine Arches, Nuwara Eliya, Trincomalee, Batticaloa, or Polonnaruwa across multiple days? We can design your exact custom route with your preferred vehicle.
             </p>
           </div>
           <a

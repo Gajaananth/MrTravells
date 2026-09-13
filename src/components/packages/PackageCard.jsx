@@ -16,7 +16,7 @@ export default function PackageCard({ pkg, onEnquire }) {
   const [activeImage, setActiveImage] = useState(pkg.heroImage);
   const [activeTab, setActiveTab] = useState('itinerary');
 
-  const packageWhatsAppLink = getWhatsAppLink(`Hi MR Travels & Tours, I'm interested in the ${pkg.title} package (${pkg.pricing.formatted}).`);
+  const packageWhatsAppLink = getWhatsAppLink(`Hi MR Travels & Tours, I'm interested in the ${pkg.title} package. Please let me know the price details for my group.`);
 
   return (
     <motion.article
@@ -45,19 +45,19 @@ export default function PackageCard({ pkg, onEnquire }) {
                 <Clock size={12} /> {pkg.duration}
               </span>
               <span className="px-2.5 sm:px-3 py-1 rounded-full bg-black/70 backdrop-blur-md border border-white/20 text-[11px] sm:text-xs text-stone-200 flex items-center gap-1.5">
-                <Users size={12} /> {pkg.pricing.type}
+                <Users size={12} /> {pkg.vehicleOptionsText || 'Cars · Vans · Buses'}
               </span>
             </div>
 
-            {/* Bottom Price in LKR ONLY */}
+            {/* Rate & Consultation Badge */}
             <div className="absolute bottom-2.5 sm:bottom-3 left-2.5 sm:left-3 right-2.5 sm:right-3 flex items-end justify-between">
               <div className="bg-black/60 backdrop-blur-md border border-white/10 px-2.5 sm:px-3 py-1 rounded-xl text-stone-300 text-xs">
                 <span>🇱🇰 Sri Lanka Tour</span>
               </div>
 
               <div className="bg-gradient-to-r from-amber-400 to-amber-500 dark:from-ceylon-gold dark:to-amber-500 text-stone-900 dark:text-ceylon-dark px-3 sm:px-4 py-1.5 rounded-xl shadow-lg font-bold text-right">
-                <div className="text-[9px] uppercase font-bold opacity-90">Vehicle Total</div>
-                <div className="text-base sm:text-xl font-serif font-extrabold leading-tight">{pkg.pricing.formatted}</div>
+                <div className="text-[9px] uppercase font-bold opacity-90">Tailored Quote</div>
+                <div className="text-sm sm:text-base font-serif font-extrabold leading-tight">Consult for Price</div>
               </div>
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function PackageCard({ pkg, onEnquire }) {
             className="w-full flex items-center justify-center gap-2 py-3 sm:py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs uppercase tracking-wider shadow-lg transition-all active:scale-98"
           >
             <MessageCircle size={16} />
-            <span>Book on WhatsApp ({pkg.pricing.formatted})</span>
+            <span>Consult on WhatsApp (Get Price)</span>
           </a>
 
           <button
@@ -186,7 +186,7 @@ export default function PackageCard({ pkg, onEnquire }) {
               <div>
                 <h4 className="text-emerald-700 dark:text-emerald-400 font-bold uppercase tracking-wider mb-2 flex items-center gap-1.5">
                   <CheckCircle2 size={14} />
-                  <span>100% Included in Price ({pkg.pricing.formatted}):</span>
+                  <span>100% Included in Your Quote:</span>
                 </h4>
                 <ul className="space-y-1.5">
                   {pkg.included.map((inc, i) => (
