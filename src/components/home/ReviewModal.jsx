@@ -21,6 +21,8 @@ export default function ReviewModal({ isOpen, onClose, onReviewAdded }) {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
+  const [isCustomPackage, setIsCustomPackage] = useState(false);
+  const [customPackageText, setCustomPackageText] = useState('');
 
   if (!isOpen) return null;
 
@@ -56,9 +58,14 @@ export default function ReviewModal({ isOpen, onClose, onReviewAdded }) {
 
     setLoading(true);
 
+    const finalPackage = isCustomPackage && customPackageText.trim()
+      ? customPackageText.trim()
+      : formData.package_name;
+
     try {
       const payload = {
         ...formData,
+        package_name: finalPackage,
         rating,
         image_url: formData.image_base64 || null
       };
@@ -178,21 +185,55 @@ export default function ReviewModal({ isOpen, onClose, onReviewAdded }) {
                 </div>
               </div>
 
-              {/* Package Selector */}
+              {/* Package Selector & Custom Places Input */}
               <div>
-                <label className="block text-stone-700 dark:text-stone-300 mb-1 font-medium">Tour Package Taken</label>
-                <select
-                  value={formData.package_name}
-                  onChange={(e) => setFormData({ ...formData, package_name: e.target.value })}
-                  className="w-full bg-white dark:bg-[#051810] border border-stone-300 dark:border-white/15 rounded-xl px-3 py-2.5 text-stone-900 dark:text-stone-200 text-xs focus:border-amber-500 dark:focus:border-ceylon-gold focus:outline-none transition-colors"
-                >
-                  {PACKAGES.map((pkg) => (
-                    <option key={pkg.id} value={pkg.title}>
-                      {pkg.title}
-                    </option>
-                  ))}
-                  <option value="Custom Multi-Day Sri Lanka Tour">Custom Multi-Day Sri Lanka Tour</option>
-                </select>
+                <div className="flex items-center justify-between mb-1">
+                  <label className="block text-stone-700 dark:text-stone-300 font-medium">Tour Package Taken</label>
+                  <button
+                    type="button"
+                    onClick={() => setIsCustomPackage(!isCustomPackage)}
+                    className="text-[11px] text-amber-700 dark:text-ceylon-gold font-semibold hover:underline"
+                  >
+                    {isCustomPackage ? "← Choose from standard packages" : "✏️ Mention places manually"}
+                  </button>
+                </div>
+
+                {!isCustomPackage ? (
+                  <select
+                    value={formData.package_name}
+                    onChange={(e) => {
+                      if (e.target.value === 'custom') {
+                        setIsCustomPackage(true);
+                      } else {
+                        setFormData({ ...formData, package_name: e.target.value });
+                      }
+                    }}
+                    className="w-full bg-white dark:bg-[#051810] border border-stone-300 dark:border-white/15 rounded-xl px-3 py-2.5 text-stone-900 dark:text-stone-200 text-xs focus:border-amber-500 dark:focus:border-ceylon-gold focus:outline-none transition-colors"
+                  >
+                    {PACKAGES.map((pkg) => (
+                      <option key={pkg.id} value={pkg.title}>
+                        {pkg.title}
+                      </option>
+                    ))}
+                    <option value="custom">Custom Tour (Mention Places Manually...)</option>
+                    <option value="Custom Multi-Day Sri Lanka Tour">Custom Multi-Day Sri Lanka Tour</option>
+                  </select>
+                ) : (
+                  <div className="space-y-1">
+                    <input
+                      type="text"
+                      required
+                      placeholder="e.g. Colombo, Sigiriya, Kandy, Ella, Yala & Galle"
+                      value={customPackageText}
+                      onChange={(e) => setCustomPackageText(e.target.value)}
+                      className="w-full bg-white dark:bg-[#051810] border border-amber-500 dark:border-ceylon-gold rounded-xl px-3 py-2.5 text-stone-900 dark:text-stone-200 text-xs focus:ring-1 focus:ring-amber-500 focus:outline-none transition-colors"
+                      autoFocus
+                    />
+                    <span className="text-[10px] text-stone-500 dark:text-stone-400 block">
+                      Type the specific places, cities, or custom route you explored on your tour.
+                    </span>
+                  </div>
+                )}
               </div>
 
               {/* Customer Name */}

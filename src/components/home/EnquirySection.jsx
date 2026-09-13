@@ -18,6 +18,8 @@ export default function EnquirySection({ prefillPackage = '' }) {
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
+  const [isCustomRoute, setIsCustomRoute] = useState(false);
+  const [customRouteText, setCustomRouteText] = useState('');
 
   useEffect(() => {
     if (prefillPackage) {
@@ -36,8 +38,12 @@ export default function EnquirySection({ prefillPackage = '' }) {
 
     setLoading(true);
 
+    const finalPackage = isCustomRoute && customRouteText.trim()
+      ? customRouteText.trim()
+      : formData.package_name;
+
     try {
-      const result = await submitEnquiry(formData);
+      const result = await submitEnquiry({ ...formData, package_name: finalPackage });
       if (result && result.success) {
         setSubmitted(true);
         try {
@@ -215,24 +221,57 @@ export default function EnquirySection({ prefillPackage = '' }) {
                     </div>
                   </div>
 
-                  {/* Package of Interest */}
+                  {/* Package of Interest & Custom Places */}
                   <div>
-                    <label className="block text-xs font-medium text-stone-700 dark:text-stone-300 mb-1">
-                      Interested Tour Package
-                    </label>
-                    <select
-                      value={formData.package_name}
-                      onChange={(e) => setFormData({ ...formData, package_name: e.target.value })}
-                      className="w-full bg-white dark:bg-[#051810] border border-stone-300 dark:border-white/15 rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-stone-900 dark:text-stone-200 text-xs sm:text-sm focus:border-amber-500 dark:focus:border-ceylon-gold focus:outline-none transition-colors"
-                    >
-                      {PACKAGES.map((pkg) => (
-                        <option key={pkg.id} value={pkg.title}>
-                          {pkg.title}
-                        </option>
-                      ))}
-                      <option value="Custom Multi-Day Sri Lanka Tour">Custom Multi-Day Tour (Multiple destinations)</option>
-                      <option value="Airport Transfer & Private Chauffeur">Airport Transfer & Hourly Chauffeur</option>
-                    </select>
+                    <div className="flex items-center justify-between mb-1">
+                      <label className="block text-xs font-medium text-stone-700 dark:text-stone-300">
+                        Interested Tour Package / Places
+                      </label>
+                      <button
+                        type="button"
+                        onClick={() => setIsCustomRoute(!isCustomRoute)}
+                        className="text-[11px] text-amber-700 dark:text-ceylon-gold font-semibold hover:underline"
+                      >
+                        {isCustomRoute ? "← Choose standard package" : "✏️ Mention places manually"}
+                      </button>
+                    </div>
+
+                    {!isCustomRoute ? (
+                      <select
+                        value={formData.package_name}
+                        onChange={(e) => {
+                          if (e.target.value === 'custom') {
+                            setIsCustomRoute(true);
+                          } else {
+                            setFormData({ ...formData, package_name: e.target.value });
+                          }
+                        }}
+                        className="w-full bg-white dark:bg-[#051810] border border-stone-300 dark:border-white/15 rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-stone-900 dark:text-stone-200 text-xs sm:text-sm focus:border-amber-500 dark:focus:border-ceylon-gold focus:outline-none transition-colors"
+                      >
+                        {PACKAGES.map((pkg) => (
+                          <option key={pkg.id} value={pkg.title}>
+                            {pkg.title}
+                          </option>
+                        ))}
+                        <option value="custom">Custom Multi-Day Tour (Mention places manually...)</option>
+                        <option value="Airport Transfer & Private Chauffeur">Airport Transfer & Hourly Chauffeur</option>
+                      </select>
+                    ) : (
+                      <div className="space-y-1">
+                        <input
+                          type="text"
+                          required
+                          placeholder="e.g. Colombo, Sigiriya, Kandy, Ella, Yala & Mirissa"
+                          value={customRouteText}
+                          onChange={(e) => setCustomRouteText(e.target.value)}
+                          className="w-full bg-white dark:bg-[#051810] border border-amber-500 dark:border-ceylon-gold rounded-xl px-3.5 py-2.5 sm:px-4 sm:py-3 text-stone-900 dark:text-stone-200 text-xs sm:text-sm focus:ring-1 focus:ring-amber-500 focus:outline-none transition-colors"
+                          autoFocus
+                        />
+                        <span className="text-[10px] text-stone-500 dark:text-stone-400 block">
+                          Enter the custom cities, sights, or route you would like to explore.
+                        </span>
+                      </div>
+                    )}
                   </div>
 
                   {/* Message */}
